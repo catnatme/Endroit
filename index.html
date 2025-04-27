@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Endroit | Authentic French Restaurant in Sarlat-la-Canéda</title>
+    <meta name="description" content="Experience exquisite French cuisine at L'Endroit in 24200 Sarlat-la-Canéda. Enjoy unforgettable lunch and dinner featuring fresh local ingredients. Book your table today!">
+    <link rel="stylesheet" href="static/css/styles.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+         integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+         crossorigin=""/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <style>
+        /* Добавляем плавную прокрутку */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="/" class="logo-link" style="text-decoration: none; color: inherit;">
+                <div class="logo">L'Endroit</div>
+            </a>
+            
+            <nav class="main-nav desktop-nav">
+                <ul>
+                    
+                        <li><a href="#hero">Home</a></li>
+                    
+                        <li><a href="#about_image_text">About Us</a></li>
+                    
+                        <li><a href="#gallery">Gallery</a></li>
+                    
+                        <li><a href="#services">Services</a></li>
+                    
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    
+                        <li><a href="#booking">Book Now</a></li>
+                    
+                        <li><a href="#promotions">Promotions</a></li>
+                    
+                        <li><a href="#contact_full">Contact</a></li>
+                    
+                </ul>
+            </nav>
+            
+            <button class="hamburger-btn" id="hamburger-btn" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    
+    <nav class="mobile-nav" id="mobile-nav">
+         <button class="close-btn" id="close-btn" aria-label="Close menu">&times;</button>
+        <ul>
+             
+                <li><a href="#hero">Home</a></li>
+             
+                <li><a href="#about_image_text">About Us</a></li>
+             
+                <li><a href="#gallery">Gallery</a></li>
+             
+                <li><a href="#services">Services</a></li>
+             
+                <li><a href="#testimonials">Testimonials</a></li>
+             
+                <li><a href="#booking">Book Now</a></li>
+             
+                <li><a href="#promotions">Promotions</a></li>
+             
+                <li><a href="#contact_full">Contact</a></li>
+             
+        </ul>
+    </nav>
+
+    <main>
+        
+            
+                
+                <section class="hero" id="hero" style="background-image: url('images/hero.jpg');">
+    <div class="container">
+        <h1>L'Endroit: Savor French Culinary Excellence in Sarlat</h1>
+        <p class="subtitle">Discover unforgettable lunch and dinner experiences in the heart of 24200 Sarlat-la-Canéda.</p>
+        <div class="cta-container">
+             
+             
+                
+                
+                
+                
+                <a href="#contact_form_map" class="btn-primary">Reserve Your Table Now</a>
+             
+        </div>
+    </div>
+</section> 
+            
+                
+                <section class="about-us about-image-text" id="about_image_text">
+    <div class="container">
+        <h2>Our Passion for French Cuisine</h2>
+        <div class="about-content">
+            
+            <div class="about-image">
+                <img src="images/about.jpg" alt="About L'Endroit" onerror="this.onerror=null;this.src='placeholder.jpg';">
+            </div>
+            <div class="about-text">
+                
+                <p>Welcome to L'Endroit, a culinary haven located in the picturesque town of 24200 Sarlat-la-Canéda. Our restaurant is born from a deep love for the rich gastronomic heritage of the Périgord region.</p>
+<p>We are committed to sourcing the freshest, highest-quality local ingredients to craft authentic and innovative French dishes. Our menu is a celebration of seasonal produce and regional specialties, prepared with skill and passion.</p>
+<p>At L'Endroit, we believe that dining is more than just a meal; it's an experience. Our warm and inviting atmosphere is designed to make you feel at home, whether you're joining us for a relaxed lunch or an elegant dinner. We strive to create memorable moments for every guest, combining exceptional food with attentive service.</p>
+<p>Join us and embark on a culinary journey that captures the essence of French dining in Sarlat-la-Canéda. We look forward to welcoming you.</p>
+            </div>
+        </div>
+    </div>
+</section> 
+            
+                
+                <section class="gallery" id="gallery">
+    <div class="container">
+        <h2>A Taste of L'Endroit</h2>
+        <p class="section-subtitle">Explore the beauty of our dishes and the charm of our restaurant.</p>
+        
+        
+        
+            <div class="gallery-grid">
+                
+                    
+                        <div class="gallery-item">
+                            
+                            <a href="images/gallery_gallery_item_1.jpg" class="gallery-lightbox" data-gallery="gallery-lightbox" 
+                               title="L'Endroit gallery image 1"
+                               data-description="Signature dish: Foie Gras Terrine with Fig Chutney">
+                                <img src="images/gallery_gallery_item_1.jpg" alt="L'Endroit gallery image 1">
+                            </a>
+                        </div>
+                    
+                
+                    
+                        <div class="gallery-item">
+                            
+                            <a href="images/gallery_gallery_item_2.jpg" class="gallery-lightbox" data-gallery="gallery-lightbox" 
+                               title="L'Endroit gallery image 2"
+                               data-description="Beautifully plated Duck Confit with Sarladaise Potatoes">
+                                <img src="images/gallery_gallery_item_2.jpg" alt="L'Endroit gallery image 2">
+                            </a>
+                        </div>
+                    
+                
+                    
+                        <div class="gallery-item">
+                            
+                            <a href="images/gallery_gallery_item_3.jpg" class="gallery-lightbox" data-gallery="gallery-lightbox" 
+                               title="L'Endroit gallery image 3"
+                               data-description="Elegant and cozy dining room interior">
+                                <img src="images/gallery_gallery_item_3.jpg" alt="L'Endroit gallery image 3">
+                            </a>
+                        </div>
+                    
+                
+                    
+                        <div class="gallery-item">
+                            
+                            <a href="images/gallery_vibrant_seasonal_salad_starter.jpg" class="gallery-lightbox" data-gallery="gallery-lightbox" 
+                               title="L'Endroit gallery image 4"
+                               data-description="Vibrant seasonal salad starter">
+                                <img src="images/gallery_vibrant_seasonal_salad_starter.jpg" alt="L'Endroit gallery image 4">
+                            </a>
+                        </div>
+                    
+                
+                    
+                        <div class="gallery-item">
+                            
+                            <a href="images/gallery_gallery_item_5.jpg" class="gallery-lightbox" data-gallery="gallery-lightbox" 
+                               title="L'Endroit gallery image 5"
+                               data-description="Decadent Chocolate Lava Cake dessert">
+                                <img src="images/gallery_gallery_item_5.jpg" alt="L'Endroit gallery image 5">
+                            </a>
+                        </div>
+                    
+                
+                    
+                        <div class="gallery-item">
+                            
+                            <a href="images/gallery_gallery_item_6.jpg" class="gallery-lightbox" data-gallery="gallery-lightbox" 
+                               title="L'Endroit gallery image 6"
+                               data-description="Exterior view of L'Endroit at dusk">
+                                <img src="images/gallery_gallery_item_6.jpg" alt="L'Endroit gallery image 6">
+                            </a>
+                        </div>
+                    
+                
+                
+                
+                
+                
+                
+            </div>
+        
+    </div>
+</section> 
+            
+                
+                <section class="services" id="services">
+    <div class="container">
+        <h2>Your Dining Options</h2>
+        
+            <p class="section-subtitle">Experience the best of French cuisine for any occasion.</p>
+        
+        
+        
+        
+            <div class="services-grid">
+                
+                    <div class="service-card">
+                        <i class="fas fa-sun service-icon"></i>
+                        <h3>Lunch Service</h3>
+                        <p><p>Enjoy a delightful midday meal in our relaxed setting. Our lunch menu features a selection of lighter dishes and daily specials, perfect for a break during your exploration of Sarlat.</p></p>
+                    </div>
+                
+                    <div class="service-card">
+                        <i class="fas fa-moon service-icon"></i>
+                        <h3>Dinner Service</h3>
+                        <p><p>Indulge in a full evening dining experience. Our dinner menu showcases our finest creations, designed to provide a memorable gastronomic journey, complemented by our curated wine list.</p></p>
+                    </div>
+                
+                    <div class="service-card">
+                        <i class="fas fa-leaf service-icon"></i>
+                        <h3>Fresh Local Ingredients</h3>
+                        <p><p>We pride ourselves on using only the freshest, locally sourced ingredients to ensure the highest quality and authentic flavors in every dish we serve.</p></p>
+                    </div>
+                
+                    <div class="service-card">
+                        <i class="fas fa-chair service-icon"></i>
+                        <h3>Warm Atmosphere</h3>
+                        <p><p>Our restaurant offers a cozy and welcoming ambiance, perfect for intimate dinners, family gatherings, or celebrating special moments in Sarlat-la-Canéda.</p></p>
+                    </div>
+                
+                    <div class="service-card">
+                        <i class="fas fa-utensils service-icon"></i>
+                        <h3>Expertly Curated Menu</h3>
+                        <p><p>Our chefs craft a menu that balances traditional French techniques with contemporary flair, offering a diverse range of options to satisfy all palates.</p></p>
+                    </div>
+                
+                    <div class="service-card">
+                        <i class="fas fa-smile service-icon"></i>
+                        <h3>Attentive Service</h3>
+                        <p><p>The L'Endroit team is dedicated to providing friendly and professional service, ensuring your dining experience is seamless and enjoyable from start to finish.</p></p>
+                    </div>
+                
+            </div>
+        
+        
+        
+        <div class="services-image">
+             <img src="images/services.jpg" alt="L'Endroit services">
+        </div>
+        
+    </div>
+</section> 
+            
+                
+                <section class="testimonials" id="testimonials">
+    <div class="container">
+        <h2>What Our Guests Say</h2>
+        
+        
+            <div class="testimonials-grid">
+                
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>L'Endroit is simply the best restaurant in Sarlat-la-Canéda. The food is consistently outstanding, and the service is impeccable. A truly authentic French dining experience!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            
+                            
+                            <div class="author-info">
+                                <h4>Isabelle Dubois</h4>
+                                <p class="position">Frequent Diner from Bordeaux</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>We stumbled upon L'Endroit during our visit to Sarlat and were absolutely blown away. The Duck Confit was divine, and the atmosphere was so charming. Highly recommend!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            
+                            
+                            <div class="author-info">
+                                <h4>Thomas Bernard</h4>
+                                <p class="position">Visitor from Paris</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            <p>L'Endroit is my go-to spot for both lunch and dinner. The quality of ingredients shines through in every dish, and the team always makes you feel special. A real gem in Sarlat!</p>
+                        </div>
+                        <div class="testimonial-author">
+                            
+                            
+                            <div class="author-info">
+                                <h4>Claire Lefevre</h4>
+                                <p class="position">Local Resident</p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        
+    </div>
+</section> 
+            
+                
+                <section class="booking" id="booking">
+    <div class="container">
+        <h2>Reserve Your Table</h2>
+        
+            <p class="section-subtitle">Plan your visit to L'Endroit and guarantee your spot for an exceptional dining experience.</p>
+        
+        
+        
+        
+             <div class="booking-link">
+                 <a href="#" target="_blank" class="btn-primary">Book Now</a>
+             </div>
+        
+    </div>
+</section> 
+            
+                
+                <section class="promotions specials" id="promotions">
+    <div class="container">
+        <h2>Special Offers</h2>
+        
+            <p class="section-subtitle">Discover our current promotions and make your dining experience even more delightful.</p>
+        
+
+        
+        
+        
+            <div class="specials-grid">
+                
+                    <div class="special-card">
+                        
+                        <div class="special-content">
+                            <h3>Weekday Lunch Menu</h3>
+                            
+                                <p class="special-description"><p>Enjoy our special fixed-price lunch menu available Monday to Friday. A perfect way to experience our cuisine at a great value.</p></p>
+                            
+                            
+                            
+                                <p class="special-validity">Available Monday-Friday, Lunch Hours</p>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="special-card">
+                        
+                        <div class="special-content">
+                            <h3>Seasonal Tasting Menu</h3>
+                            
+                                <p class="special-description"><p>Indulge in a multi-course tasting menu featuring the best seasonal produce and chef's specialties. Ask your server for details.</p></p>
+                            
+                            
+                            
+                                <p class="special-validity">Subject to availability</p>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="special-card">
+                        
+                        <div class="special-content">
+                            <h3>Wine Pairing Offer</h3>
+                            
+                                <p class="special-description"><p>Enhance your dinner with our expertly selected wine pairings for certain dishes. A perfect complement to our exquisite cuisine.</p></p>
+                            
+                            
+                            
+                                <p class="special-validity">Available during Dinner Service</p>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+        
+    </div>
+</section> 
+            
+                
+                
+<section id="contact_full" class="contact-section section-padding contact-full">
+    <div class="container">
+        <h2 class="section-title">Visit Us</h2>
+        <p class="section-subtitle">Find us in 24200 Sarlat-la-Canéda.</p>
+
+        <div class="contact-container">
+            
+
+            
+            <div class="contact-info-container">
+                <div class="contact-info">
+                    
+                    
+
+                    <ul class="contact-details">
+                        
+                        <li class="contact-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>24200 Sarlat-la-Canéda, France</span>
+                        </li>
+                        
+                        
+                        <li class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+33 XXX XXX XXX">+33 XXX XXX XXX</a>
+                        </li>
+                        
+                        
+                        <li class="contact-detail">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contact@lendroit.com">contact@lendroit.com</a>
+                        </li>
+                        
+                        
+                    </ul>
+
+                    
+                </div>
+            </div>
+            
+
+            
+            <div class="contact-map-container">
+                <div class="map-wrapper">
+                    <iframe width="100%" height="450" style="border:0;" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=4%20Pl.%20de%20la%20Grande%20Rigaudie%2C%2024200%20Sarlat-la-Can%C3%A9da%2C%20France&output=embed"></iframe>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+            
+        
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-container"> 
+            <div class="footer-info">
+                <p>© 2025 L'Endroit. All rights reserved.</p>
+                
+                <p class="footer-address"><i class="fas fa-map-marker-alt"></i> 4 Pl. de la Grande Rigaudie, 24200 Sarlat-la-Canéda, France</p>
+                <p class="footer-phone"><i class="fas fa-phone"></i> <a href="tel:+33 5 53 31 24 10">+33 5 53 31 24 10</a></p>
+                <p class="footer-email"><i class="fas fa-envelope"></i> <a href="mailto:info@l-endroit.email">info@l-endroit.email</a></p>
+            </div>
+            <div class="footer-links">
+                
+                 <a href="privacy.html">Privacy Policy</a>
+                 <span class="link-separator">|</span> 
+                 <a href="terms.html">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <button id="scrollTopBtn" class="scroll-top-btn" title="Go to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+            
+    
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+            
+    
+    <script src="static/js/scripts.js"></script>
+</body>
+</html>
